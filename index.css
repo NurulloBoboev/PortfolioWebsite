@@ -1,0 +1,44 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.top_nav{
+    position:fixed;
+    display:flex;
+    flex_direction: row;
+    justify-content: space-between;
+    background-color: aquamarine;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    padding:1rem 6.5rem;
+    z-index: 1000000;
+}
+
+.top_nav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.banner{
+    position:relative;
+    margin:auto;
+    top: 5rem;
+}
+
+.java{
+    position: relative;
+    margin:auto;
+    top:auto;
+
+}
+
+.projects{
+    position:relative;
+    top:10rem;
+}
