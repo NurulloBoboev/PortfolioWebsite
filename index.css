@@ -8,20 +8,28 @@ html{
     --blue: #93d4ff;
     --white: #ffffff;
     --black: #000000;
+    --grey: #4d4d4d;
+
 }
 
 .light-theme {
     --bg: var(--blue);
-    --fontColor: var(--black);
+    --fontColor: var(--white);
+    --contColor: var(--grey);
+    --contShadow: var(--black);
 }
 
 .dark-theme {
     --bg: var(--black);
-    --fontColor: var(--blue);
+    --fontColor: var(--white);
+    --contColor: var(--grey);
+    --contShadow: var(--white);
   }
 
   
 * {
+    margin: 0px;
+    padding: 0px;
     color: var(--fontColor);
     font-family: helvetica;
 }
@@ -30,6 +38,10 @@ body {
     background: var(--bg);
 }
 
+nav {
+    margin:0px;
+    padding:0px;
+}
 .top_nav{
     position:fixed;
     display:inline-flex;
@@ -37,10 +49,11 @@ body {
     justify-content: space-between;
     background-color: rgb(219, 101, 32);
     overflow: hidden;
-    width: 95%;
+    width: 100%;
     align-items: center;
-    padding:0rem 1rem;
     z-index: 1000000;
+    padding: 0.5rem 0rem;
+    margin: auto;
 }
 
 .top_nav a {
@@ -62,26 +75,37 @@ body {
     font-size: 17px;
     font-weight: bold;
 }
-
-.banner{
+/* Home page styling */
+.home{
+    background:url("homeBG.jpg") no-repeat right;
+    color: white;
+    display: flex;
     position:relative;
     margin:auto;
-    top: 5rem;
-}
-
-.java{
-    position: relative;
-    margin:auto;
-    top:auto;
+    top: 6rem;
+    position:absolute;
+    height: 40rem;
+   width:100%;
+    background-color: var(--contColor);
 
 }
 
-.projects{
-    position:relative;
-    top:10rem;
+.home .div_text{
+    margin-left: 10rem;
 }
 
+.home h1{
+    font-size: 46px;
+    margin-top: 12rem;
+    margin-left: 1rem;
+}
 
+.home p{
+    font-size: 27px;
+    margin-left: 12px;
+}
+
+/* -------------- THE FOLLOWING CODE IS FOR THE DARK MODE SLIDER ------------------ */
 /* The switch - the box around the slider */
 .switch {
     position: relative;
