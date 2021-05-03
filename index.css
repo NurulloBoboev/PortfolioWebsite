@@ -2,16 +2,44 @@ html{
     scroll-behavior: smooth;
 }
 
+/* The following is to enable light and dark themes for the website*/
+
+:root{
+    --blue: #93d4ff;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.light-theme {
+    --bg: var(--blue);
+    --fontColor: var(--black);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--blue);
+  }
+
+  
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+}
+
 .top_nav{
     position:fixed;
-    display:flex;
-    flex_direction: row;
+    display:inline-flex;
+    flex-direction: row;
     justify-content: space-between;
-    background-color: aquamarine;
+    background-color: rgb(219, 101, 32);
     overflow: hidden;
-    width: 100%;
+    width: 95%;
     align-items: center;
-    padding:1rem 6.5rem;
+    padding:0rem 1rem;
     z-index: 1000000;
 }
 
@@ -20,6 +48,16 @@ html{
     color: #000000;
     text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    border: black;
+    display:block;
+}
+
+.top_nav .dark_mode{
+    color:rgb(0, 0, 0);
+    padding: 14px 20px;
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
@@ -42,3 +80,67 @@ html{
     position:relative;
     top:10rem;
 }
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #21a6f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #21a6f3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
