@@ -8,7 +8,7 @@ html{
     --blue: #93d4ff;
     --white: #ffffff;
     --black: #000000;
-    --grey: #4d4d4d;
+    --grey: #050A20;
 
 }
 
@@ -16,11 +16,11 @@ html{
     --bg: var(--blue);
     --fontColor: var(--white);
     --contColor: var(--grey);
-    --contShadow: var(--black);
+    --contShadow: var(--grey);
 }
 
 .dark-theme {
-    --bg: var(--black);
+    --bg: var(--grey);
     --fontColor: var(--white);
     --contColor: var(--grey);
     --contShadow: var(--white);
@@ -39,8 +39,10 @@ body {
 }
 
 nav {
+    margin: 0px 0px 0px 0px;
     margin:0px;
     padding:0px;
+    top: 0;
 }
 .top_nav{
     position:fixed;
@@ -54,6 +56,7 @@ nav {
     z-index: 1000000;
     padding: 0.5rem 0rem;
     margin: auto;
+    top: 0;
 }
 
 .top_nav a {
@@ -91,7 +94,13 @@ nav {
 }
 
 .home .div_text{
+    height: 30rem;
+    width:50rem;
+    margin-top: 5rem;
     margin-left: 10rem;
+    box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
+    border-radius: 24px;
+    z-index: 100;
 }
 
 .home h1{
@@ -102,9 +111,24 @@ nav {
 
 .home p{
     font-size: 27px;
-    margin-left: 12px;
+    margin-left: 24px;
 }
 
+
+.python {
+    display:flex;
+    position: relative;
+    margin-top: 46rem;
+    height: 40rem;
+    background: rgb(46, 0, 48);
+}
+
+.python .title-1{
+    margin-top:8rem;
+    margin-left: 12rem;
+    text-decoration:underline;
+    font-size: 46px;
+}
 /* -------------- THE FOLLOWING CODE IS FOR THE DARK MODE SLIDER ------------------ */
 /* The switch - the box around the slider */
 .switch {
