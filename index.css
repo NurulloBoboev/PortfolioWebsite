@@ -91,6 +91,7 @@ nav {
     height: 100vh;
     width:100%;
     background-color: var(--contColor);
+    transition:0.8s;
 
 }
 
@@ -105,6 +106,7 @@ nav {
     border-radius: 24px;
     z-index: 100;
     background-color: rgba(204, 204, 204,0.2);
+    transition:0.8s;
 
 
 }
@@ -159,6 +161,7 @@ nav {
     position: absolute;
     top:0; left: 0;
     width: max(25vw, 250px);
+    transition:0.8s;
 }
 
 .python .vaccine_app .vaccine_app_about{
@@ -167,9 +170,11 @@ nav {
     margin-left: 52vw;
     border-radius: 24px;
     border: 2px solid black;
+    background-color: rgba(204, 204, 204,0.2);
     width: 35vw;
     height: 60vh;
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
+    transition:0.8s;
     
 
 }
