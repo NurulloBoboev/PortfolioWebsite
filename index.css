@@ -77,6 +77,7 @@ nav {
 .top_nav a:hover {
     color:black;
     background: #21a6f3;
+    box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.5);
     transition: 0.5s;
 }
 
@@ -105,8 +106,9 @@ nav {
 }
 
 .home .div_text{
-    display: flexbox;
+    display: flex;
     position: relative;
+    flex-direction: column;
     height: 65vh;
     width: clamp(45ch, 50%, 75ch);
     margin-top: 15vh;
@@ -122,7 +124,7 @@ nav {
 
 .home h1{
     font-size: min(9.0vw,46px);
-    margin-top: 20vh;
+    margin-top: 2vh;
     margin-left: 1vw;
     
 }
@@ -130,7 +132,26 @@ nav {
 .home p{
     font-size: min(6.0vw, 32px);
     margin-left: 1vw;
-    margin-top: 10vh;
+    margin-top: 8vh;
+}
+
+.home a{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 6vh;
+
+    font-size: min(6.0vw, 32px);
+    border: 2px solid black;
+    padding: 2vh;
+    border-radius: 32px;
+    display:block;
+
+    background-color: #112169;
+}
+
+.home a:hover{
+    background: green;
+    transition: 0.5s;
 }
 
 .python {
