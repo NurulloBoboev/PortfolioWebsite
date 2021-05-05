@@ -116,8 +116,7 @@ nav {
     display: flex;
     position: relative;
     flex-direction: column;
-    height: 65vh;
-    width: clamp(45ch, 50%, 73ch);
+    width:min(85vw, 900px);
     margin-top: 15vh;
     margin-left: min(4vw,50px);
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
@@ -138,7 +137,7 @@ nav {
 }
 
 .home p{
-    font-size: min(6.0vw, 28px);
+    font-size: min(6.0vw, 32px);
     margin-left: 1vw;
     margin-top: 8vh;
     margin-right:2vw;
@@ -147,7 +146,8 @@ nav {
 .home a{
     text-align: center;
     text-decoration: none;
-    margin-top: 6vh;
+    margin-top: auto;
+    margin-bottom: 2vh;
 
     font-size: min(6.0vw, 32px);
     border: 2px solid black;
@@ -209,23 +209,22 @@ nav {
 }
 
 .python .vaccine_app .slide_show1{
-    margin-left: 5vw;
+    margin-left: 2vw;
     
 }
 
 .python .vaccine_app .slide_show1 img{
     position: relative;
     border-radius: 24px;
-    width:min(75vw, 600px);
+    width:min(85vw, 600px);
 }
 
 .python .vaccine_app .vaccine_app_about{
     position: relative;
     border-radius: 24px;
     background-color: rgba(238, 207, 109,0.4);
-    width:min(75vw, 900px);
-    height: 65vh;
-    margin-left: 5vw;
+    width:min(85vw, 900px);
+    margin-left: 2vw;
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
     transition:0.2s;
 
@@ -233,6 +232,7 @@ nav {
 /* Text describing Project */
 .python .vaccine_app .vaccine_app_about .about_text{
     font-weight: bold;
+    font-size: min(9.0vw,46px);
     margin-top: 3vh;
     margin-left: 3vw;
 }
@@ -241,7 +241,7 @@ nav {
 .vaccine_app_about a{
     text-align: center;
     text-decoration: none;
-    margin-top: 6vh;
+    margin-top: auto;
     font-size: min(6.0vw, 32px);
     border: 2px solid black;
     padding: 2vh;
@@ -251,6 +251,7 @@ nav {
     background-color: #88292F;
     margin-left: auto;
     margin-right: 2vw;
+    margin-bottom: 2vh;
     transition:0.5s;
     max-width: 200px;
 
