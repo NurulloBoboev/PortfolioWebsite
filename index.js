@@ -7,13 +7,17 @@ const links = document.querySelectorAll('.dropdown_content a');
 // Toggle the nav bar
 burger.addEventListener('click', function () {
     nav.classList.toggle('dropdown_active');
+    burger.classList.toggle('burgerhover')
 
     //Add animations for the buttons
-    links.forEach((a,index) =>{
+    links.forEach((link,index) =>{
+
         if(link.style.animation) {
+            console.log(link.style.animation);
             link.style.animation = '';
         } else {
-            link.style.animation = 'dropdown_fade 0.5s ease forwards ${index / 7+ 0}s';
+            link.style.animation = `dropdown_fade 2s ease forwards ${index*0.125}s`;
+            console.log(link.style.animation);
         }
     });
 });
