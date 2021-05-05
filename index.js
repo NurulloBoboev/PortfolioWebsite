@@ -1,11 +1,24 @@
 'use strict'
 
-const switcher = document.querySelector('input');
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.dropdown_content');
+const links = document.querySelectorAll('.dropdown_content a');
 
-switcher.addEventListener('click', function() {
-    document.body.classList.toggle('dark-theme')
+// Toggle the nav bar
+burger.addEventListener('click', function () {
+    nav.classList.toggle('dropdown_active');
 
+    //Add animations for the buttons
+    links.forEach((a,index) =>{
+        if(link.style.animation) {
+            link.style.animation = '';
+        } else {
+            link.style.animation = 'dropdown_fade 0.5s ease forwards ${index / 7+ 0}s';
+        }
+    });
 });
+
+
 
 var i = 1;
 var image1 = 'gif1.gif';
@@ -28,3 +41,5 @@ var time = 8000;
     }
 
     window.onload = changeImg;
+
+
