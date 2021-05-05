@@ -2,6 +2,30 @@ html{
     scroll-behavior: smooth;
 }
 
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+      border-radius: 5px;
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #050A20;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
 /* The following is to enable light and dark themes for the website*/
 
 :root{
@@ -37,6 +61,7 @@ html{
     padding: 0px;
     color: var(--fontColor);
     font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
 }
 
 body {
@@ -57,7 +82,7 @@ nav {
     margin-left: 2vw;
     font-weight: bold;
     font-size: min(9.0vw,36px);
-    letter-spacing: 3px;
+    
 }
 
 .top_nav{
