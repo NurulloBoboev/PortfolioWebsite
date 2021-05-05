@@ -5,10 +5,15 @@ html{
 /* The following is to enable light and dark themes for the website*/
 
 :root{
-    --blue: #93d4ff;
+    --blue:  #93d4ff;
     --white: #ffffff;
     --black: #000000;
-    --grey: #050A20;
+    /* Current Colour Palette */
+    --Dblue: #050A20;
+    --grey:  #7C90A0;
+    --orange-yellow: rgb(238, 207, 109);
+    --golden: #8B6220;
+    --blue-grey: #628395;
 
 }
 
@@ -35,7 +40,7 @@ html{
 }
 
 body {
-    background: linear-gradient(#050A20, #0d194b);
+    background: linear-gradient(var(--Dblue), var(--blue-grey));
     height:1400vh;
 }
 
@@ -50,7 +55,7 @@ nav {
     display:inline-flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(116, 0, 0);
+    background-color: rgb(135, 142, 136,0.6);
     overflow: hidden;
     width: 100%;
     align-items: center;
@@ -62,7 +67,8 @@ nav {
 
 .top_nav a {
     float: left;
-    color: #777777;
+    color: black;
+    background-color: #88292F;
     text-align: center;
     margin-left: 2vw;
     padding: 1vh 1vw;
@@ -72,11 +78,12 @@ nav {
     border: 2px solid black;
     border-radius: 24px;
     display:block;
+    transition: 0.5s;
 }
 
 .top_nav a:hover {
     color:black;
-    background: #21a6f3;
+    background: #97EFE9;
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.5);
     transition: 0.5s;
 }
@@ -110,19 +117,20 @@ nav {
     position: relative;
     flex-direction: column;
     height: 65vh;
-    width: clamp(45ch, 50%, 75ch);
+    width: clamp(45ch, 50%, 73ch);
     margin-top: 15vh;
-    margin-left: clamp(1px, 10%, 25vw);
+    margin-left: min(4vw,50px);
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
     border-radius: 24px;
     z-index: 100;
-    background-color: rgba(204, 204, 204,0.2);
+    background-color: rgba(238, 207, 109,0.4);
     transition:0.2s;
 
 
 }
 
 .home h1{
+    font-weight: bolder;
     font-size: min(9.0vw,46px);
     margin-top: 2vh;
     margin-left: 1vw;
@@ -130,9 +138,10 @@ nav {
 }
 
 .home p{
-    font-size: min(6.0vw, 32px);
+    font-size: min(6.0vw, 28px);
     margin-left: 1vw;
     margin-top: 8vh;
+    margin-right:2vw;
 }
 
 .home a{
@@ -146,18 +155,28 @@ nav {
     border-radius: 32px;
     display:block;
 
-    background-color: #112169;
+    background-color: #88292F;
+    transition:0.5s;
+
 }
 
 .home a:hover{
-    background: green;
+    color: black;
+    box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.2);
+    background: #97EFE9;
     transition: 0.5s;
+}
+
+
+.projects{
+    margin-top: 108vh;
+    display:flex;
+    flex-direction:column;
 }
 
 .python {
     position: relative;
-    margin-top: 108vh;
-    height: 100vh;
+
     /* background: #050A20; */
 }
 
@@ -168,13 +187,14 @@ nav {
     font-size: min(3.0vw, 32px);
 }
 
-.python .title-1{
+.title-1{
+    margin-left: 2vw;
     margin-top:8vh;
     text-decoration:underline;
     font-size: min(5.0vw,46px);
 }
 
-.python .title-2{
+.title-2{
     margin-left: 2vw;
     margin-top: 2vh;
     font-size: min(5.0vw,32px);
@@ -193,25 +213,54 @@ nav {
 
 .python .vaccine_app .slide_show1 img{
     position: relative;
-    width:min(60vw, 600px);
+    border-radius: 24px;
+    width:min(75vw, 600px);
 }
 
 .python .vaccine_app .vaccine_app_about{
     position: relative;
     border-radius: 24px;
-    border: 2px solid black;
-    background-color: rgba(204, 204, 204,0.2);
-    width:min(60vw, 900px);
+    background-color: rgba(238, 207, 109,0.4);
+    width:min(75vw, 900px);
     height: 65vh;
     margin-left: 5vw;
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
     transition:0.2s;
 
 }
-
+/* Text describing Project */
 .python .vaccine_app .vaccine_app_about .about_text{
+    font-weight: bold;
+    margin-top: 3vh;
+    margin-left: 3vw;
+}
 
+/* GitHub link */
+.vaccine_app_about a{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 6vh;
+    font-size: min(6.0vw, 32px);
+    border: 2px solid black;
+    padding: 2vh;
+    border-radius: 32px;
+    display:block;
 
+    background-color: #88292F;
+    transition:0.5s;
+
+}
+
+.vaccine_app_about a:hover{
+    transition:0.5s;
+    color:black;
+    background-color: #97EFE9;
+}
+
+.about_info{
+    margin-top: 5vh;
+    margin-left:5vw;
+    margin-right:1vw;
 }
 
 /* -------------- THE FOLLOWING CODE IS FOR THE DARK MODE SLIDER ------------------ */
