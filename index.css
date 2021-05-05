@@ -67,7 +67,7 @@ nav {
 
 .top_nav a {
     float: left;
-    color: black;
+    color: white;
     background-color: #88292F;
     text-align: center;
     margin-left: 2vw;
@@ -241,13 +241,13 @@ nav {
 .vaccine_app_about a{
     text-align: center;
     text-decoration: none;
-    margin-top: auto;
-    font-size: min(6.0vw, 32px);
+    margin-top: 1vh;
+    font-size: min(4.0vw, 26px);
     border: 2px solid black;
     padding: 2vh;
     border-radius: 32px;
     display:block;
-
+    colour:white;
     background-color: #88292F;
     margin-left: auto;
     margin-right: 2vw;
@@ -261,9 +261,12 @@ nav {
     transition:0.5s;
     color:black;
     background-color: #97EFE9;
+    box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.2);
+
 }
 
 .about_info{
+    font-size: max(2ch, 16px);
     margin-top: 5vh;
     margin-left:5vw;
     margin-right:1vw;
