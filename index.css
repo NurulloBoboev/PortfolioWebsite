@@ -57,6 +57,7 @@ html{
 
   
 * {
+    font-weight: bold;
     margin: 0px;
     padding: 0px;
     color: var(--fontColor);
@@ -116,7 +117,7 @@ nav {
     background-color: rgb(135, 142, 136,0.6);
     width:24vw;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.125s ease-in;
 }
 
 .dropdown_content li{
@@ -283,10 +284,11 @@ nav {
 }
 
 .title-1{
+    
     margin-left: 2vw;
     margin-top:8vh;
     text-decoration:underline;
-    font-size: min(5.0vw,46px);
+    font-size: min(9.0vw,46px);
 }
 
 .title-2{
@@ -340,7 +342,7 @@ nav {
     padding: 2vh;
     border-radius: 32px;
     display:block;
-    colour:white;
+    color:white;
     background-color: #88292F;
     margin-left: auto;
     margin-right: 2vw;
@@ -359,7 +361,7 @@ nav {
 }
 
 .about_info{
-    font-size: max(2ch, 16px);
+    font-size: max(1.7ch, 16px);
     margin-top: 5vh;
     margin-left:5vw;
     margin-right:1vw;
