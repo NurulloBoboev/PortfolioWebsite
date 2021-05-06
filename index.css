@@ -74,7 +74,7 @@ html{
 
 body {
     overflow-x: hidden;
-    background-color: #050A20;
+    background-color: var(--Dblue);
     
 }
 
@@ -287,19 +287,36 @@ animation kinda works */
     border-color: black;
 }
 
+/* Start of the About Me section */
+.about{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    margin-top: 100vh;
+    background-color: hsl(228, 20%, 20%);
+}
+
+.profile_pic{
+    margin-left: auto;
+}
+.profile_pic img{
+    position: relative;
+    border-radius: 0px;
+    width:min(85vw, 400px);
+}
+
 /* Start of the projects section */
 .projects{
-    margin-top: 100vh;
+    margin-top: 5vh;
     display:flex;
     flex-direction:column;
     background: var(--Dblue);
 }
 
-.projTitle{
+.section_title{
     margin-left: 4vw;
     color: var(--Lblue);
     font-size: min(15.0vw,96px);
-
 }
 
 /* Python projects subsection */
