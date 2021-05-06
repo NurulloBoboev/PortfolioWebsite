@@ -28,6 +28,7 @@ html{
 
 /* The following is to enable light and dark themes for the website*/
 
+/* The stuff in the :root are just variable declarations that can be used throughout the CSS */
 :root{
     --blue:  #93d4ff;
     --white: #ffffff;
@@ -41,6 +42,7 @@ html{
 
 }
 
+/* These 2 theme things are essentially frameworks that hold the basic information for each theme */
 .light-theme {
     --bg: var(--blue);
     --fontColor: var(--white);
@@ -55,7 +57,7 @@ html{
     --contShadow: var(--white);
   }
 
-  
+  /* the '*' represents all elements in the HTML, and will apply anything inside it globally to all elements */
 * {
     font-weight: bold;
     margin: 0px;
@@ -79,6 +81,7 @@ nav {
     top: 0;
 }
 
+/* Title on the nav bar */
 .title{
     margin-left: 2vw;
     font-weight: bold;
@@ -100,7 +103,7 @@ nav {
     top: 0;
     min-height: 7vh;
 }
-
+/* This is the styling for the nav bar menu that has all the links to diff places on the webpage*/
 .dropdown_content{
     position:absolute;
     display:flex;
@@ -127,6 +130,9 @@ nav {
     transform: translateX(0%);
 }
 
+/* Custom animation for the dropdown menu that was taken from: 
+https://www.youtube.com/watch?v=gXkqy0b4M5g&list=FLvkJfyvfpLz5mmcvuf0LUjg&index=2&ab_channel=DevEd 
+animation kinda works */
 @keyframes dropdown_fade{
     from{ 
         opacity:0;
@@ -276,7 +282,7 @@ nav {
     /* background: #050A20; */
 }
 
-.python .vaccine_app{
+.app{
     display: flex;
     margin-top:2vh;
     margin-left: 4vw;
@@ -297,24 +303,24 @@ nav {
     font-size: min(5.0vw,32px);
 }
 
-.vaccine_container{
+.flex_container{
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
 
-.python .vaccine_app .slide_show1{
+.slide_show1{
     margin-left: 2vw;
     
 }
 
-.python .vaccine_app .slide_show1 img{
+.slide_show1 img{
     position: relative;
     border-radius: 24px;
     width:min(85vw, 600px);
 }
 
-.python .vaccine_app .vaccine_app_about{
+.about_container{
     position: relative;
     border-radius: 24px;
     background-color: rgba(238, 207, 109,0.4);
@@ -325,7 +331,7 @@ nav {
 
 }
 /* Text describing Project */
-.python .vaccine_app .vaccine_app_about .about_text{
+.about_text{
     font-weight: bold;
     font-size: min(9.0vw,46px);
     margin-top: 3vh;
@@ -333,7 +339,7 @@ nav {
 }
 
 /* GitHub link */
-.vaccine_app_about a{
+.about_container a{
     text-align: center;
     text-decoration: none;
     margin-top: 1vh;
@@ -352,7 +358,7 @@ nav {
 
 }
 
-.vaccine_app_about a:hover{
+.about_container a:hover{
     transition:0.5s;
     color:black;
     background-color: #97EFE9;
@@ -366,6 +372,14 @@ nav {
     margin-left:5vw;
     margin-right:1vw;
 }
+
+
+
+
+
+
+
+
 
 /* -------------- THE FOLLOWING CODE IS FOR THE DARK MODE SLIDER ------------------ */
 /* The switch - the box around the slider */
