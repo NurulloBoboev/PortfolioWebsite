@@ -35,7 +35,7 @@ html{
     --black: #000000;
     /* Current Colour Palette */
     --Dblue: #050A20;
-    --grey:  #7C90A0;
+    --grey:  #000000;
     --orange-yellow: rgb(238, 207, 109);
     --golden: #8B6220;
     --blue-grey: #628395;
@@ -68,9 +68,8 @@ html{
 }
 
 body {
-    background: linear-gradient(var(--Dblue), var(--blue-grey));
-    height:1400vh;
     overflow-x: hidden;
+    background-color: #050A20;
     
 }
 
@@ -85,7 +84,7 @@ nav {
 .title{
     margin-left: 2vw;
     font-weight: bold;
-    font-size: min(9.0vw,36px);
+    font-size: min(9.0vw,32px);
     
 }
 
@@ -94,14 +93,14 @@ nav {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(135, 142, 136,0.6);
+    background-color: rgb(135, 142, 136,0.8);
     width: 100%;
     align-items: center;
     z-index: 1000000;
     padding: 0.5vh 0vh;
     margin: auto;
     top: 0;
-    min-height: 7vh;
+    height: 7vh;
 }
 /* This is the styling for the nav bar menu that has all the links to diff places on the webpage*/
 .dropdown_content{
@@ -111,16 +110,16 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     text-decoration: none;
-    letter-spacing: 3px;
     right:0px;
 
     height:92vh;
     top:8vh;
     max-width: 200px;
-    background-color: rgb(135, 142, 136,0.6);
+    background-color: rgb(135, 142, 136,0.8);
     width:24vw;
     transform: translateX(100%);
     transition: transform 0.125s ease-in;
+
 }
 
 .dropdown_content li{
@@ -147,8 +146,7 @@ animation kinda works */
 .dropdown_content a {
     opacity: 0;
     color: white;
-    text-align: center;
-    padding: 1vh 1vw;
+    text-align: left;
     text-decoration: none;
     font-size: min(4.0vw, 17px);
     font-weight: bold;
@@ -184,6 +182,10 @@ animation kinda works */
     transition: 0.5s;
 }
 
+.burger:hover{
+    background-color: #000000;
+}
+
 .burgerhover{
     background-color: black;
     transition: 0.5s;
@@ -195,15 +197,16 @@ animation kinda works */
     font-size: 17px;
     font-weight: bold;
 }
+
 /* Home page styling */
 .home{
-    /* background:url("homeBG.jpg") no-repeat center; */
+    background:url("homeBG.jpg") no-repeat center;
     background-size: cover;
     color: white;
     display: flexbox;
     position:relative;
     margin:auto;
-    top: 8vh;
+    top: 0vh;
     position:absolute;
     height: 100vh;
     width:100%;
@@ -216,11 +219,11 @@ animation kinda works */
     display: flex;
     position: relative;
     flex-direction: column;
-    width:min(85vw, 900px);
-    margin-top: 15vh;
-    margin-left: min(4vw,50px);
+    width:min(90vw, 900px);
+    margin:auto;
+    margin-top: 25vh;
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
-    border-radius: 24px;
+    border-radius: 0px;
     z-index: 100;
     background-color: rgba(238, 207, 109,0.4);
     transition:0.2s;
@@ -271,9 +274,10 @@ animation kinda works */
 
 
 .projects{
-    margin-top: 108vh;
+    margin-top: 100vh;
     display:flex;
     flex-direction:column;
+    background: var(--Dblue);
 }
 
 .python {
@@ -316,29 +320,48 @@ animation kinda works */
 
 .slide_show1 img{
     position: relative;
-    border-radius: 24px;
+    border-radius: 0px;
     width:min(85vw, 600px);
 }
 
 .about_container{
     position: relative;
-    border-radius: 24px;
+    border-radius: 0px;
     background-color: rgba(238, 207, 109,0.4);
     width:min(85vw, 900px);
     margin-left: 2vw;
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
     transition:0.2s;
-
 }
 /* Text describing Project */
 .about_text{
     font-weight: bold;
-    font-size: min(9.0vw,46px);
+    font-size: min(7.0vw,46px);
     margin-top: 3vh;
     margin-left: 3vw;
 }
 
-/* GitHub link */
+/* following 2 control the list styling for list of languages, and list of frameworks/libraries */
+
+.info_list{
+    font-size: max(1.2ch, 14px);
+    list-style: circle ;
+    margin-left: 6vw;
+}
+
+.info_list li{
+    margin-left: 4vw;
+}
+
+/* Text description of the software */
+.about_info{
+    font-size: max(1.5ch, 16px);
+    margin-top: 2vh;
+    margin-left:5vw;
+    margin-right:1vw;
+}
+
+/* GitHub link button */
 .about_container a{
     text-align: center;
     text-decoration: none;
@@ -366,11 +389,19 @@ animation kinda works */
 
 }
 
-.about_info{
-    font-size: max(1.7ch, 16px);
-    margin-top: 5vh;
-    margin-left:5vw;
-    margin-right:1vw;
+.contact{
+    
+    text-align: center;
+}
+
+.contact_form{
+    height:50vh;
+}
+
+.contact_form .cont_title{
+    margin: 10vh;
+    font-weight: bolder;
+    font-size: min(9.0vw,46px);
 }
 
 
