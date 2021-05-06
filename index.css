@@ -17,12 +17,12 @@ html{
   /* Handle */
   ::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background: #050A20;
+    background: var(--Mblue);
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: var(--grey);
   }
 
 
@@ -34,8 +34,13 @@ html{
     --white: #ffffff;
     --black: #000000;
     /* Current Colour Palette */
-    --Dblue: #050A20;
-    --grey:  #000000;
+    --Dblue: #0B0C10;
+    --grey:  rgb(31, 40, 51);
+    --Lgrey: #C5C6C7;
+    --Lblue: #66FCF1;
+    --Mblue: #45A29E;
+
+    /* old colour palette */
     --orange-yellow: rgb(238, 207, 109);
     --golden: #8B6220;
     --blue-grey: #628395;
@@ -93,7 +98,7 @@ nav {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(135, 142, 136,0.8);
+    background-color: rgb(31, 40, 51,0.8);
     width: 100%;
     align-items: center;
     z-index: 1000000;
@@ -115,7 +120,7 @@ nav {
     height:92vh;
     top:8vh;
     max-width: 200px;
-    background-color: rgb(135, 142, 136,0.8);
+    background-color: rgb(31, 40, 51,0.8);
     width:24vw;
     transform: translateX(100%);
     transition: transform 0.125s ease-in;
@@ -160,7 +165,7 @@ animation kinda works */
 }
 
 .top_nav a:hover {
-    color:black;
+    color:var(--Lblue);
     transition: 0.5s;
 }
 
@@ -183,11 +188,11 @@ animation kinda works */
 }
 
 .burger:hover{
-    background-color: #000000;
+    background-color: var(--Mblue);
 }
 
 .burgerhover{
-    background-color: black;
+    background-color: var(--Mblue);
     transition: 0.5s;
 }
 .top_nav .dark_mode{
@@ -201,6 +206,7 @@ animation kinda works */
 /* Home page styling */
 .home{
     background:url("homeBG.jpg") no-repeat center;
+
     background-size: cover;
     color: white;
     display: flexbox;
@@ -220,47 +226,54 @@ animation kinda works */
     display: flex;
     position: relative;
     flex-direction: column;
-    width:min(90vw, 900px);
+    justify-content: center;
+    width:100%;
+    height:100%;
     margin:auto;
-    margin-top: 25vh;
+
+    filter:blur(0px);
+    -webkit-filter: blur(0px);
+
+
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
     border-radius: 0px;
     z-index: 100;
-    background-color: rgba(238, 207, 109,0.4);
+    background-color: rgba(31, 40, 51,0.6);
     transition:0.2s;
-
+    justify-content: center;
+    align-items: center;
 
 }
 
 .home h1{
-    font-weight: bolder;
-    font-size: min(9.0vw,46px);
-    margin-top: 2vh;
+    font-weight: bold;
+    font-size: min(15.0vw,164px);
+    margin-top: 10%;
     margin-left: 1vw;
+    color: var(--Lblue);
     
 }
 
 .home p{
-    font-size: min(6.0vw, 32px);
-    margin-left: 1vw;
-    margin-top: 8vh;
-    margin-right:2vw;
+    /* border: 2px solid black; */
+    font-size: min(6.0vw, 40px);
+    margin-left: 25%;
+    margin-right:25%;
 }
 
 .home a{
     text-align: center;
     text-decoration: none;
-    margin-top: auto;
-    margin-bottom: 2vh;
+    margin-top: 4vh;
 
     font-size: min(6.0vw, 32px);
-    border: 2px solid black;
+    border: 2px solid var(--Lblue);
     padding: 2vh;
-    border-radius: 32px;
+    border-radius: 0px;
 
-    background-color: #88292F;
+    /* background-color: #88292F; */
     margin-left: auto;
-    margin-right: 2vw;
+    margin-right: auto;
 
     transition:0.5s;
     max-width: 150px;
@@ -269,11 +282,12 @@ animation kinda works */
 .home a:hover{
     color: black;
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.2);
-    background: #97EFE9;
+    background: var(--Lblue);
     transition: 0.5s;
+    border-color: black;
 }
 
-
+/* Start of the projects section */
 .projects{
     margin-top: 100vh;
     display:flex;
@@ -281,6 +295,14 @@ animation kinda works */
     background: var(--Dblue);
 }
 
+.projTitle{
+    margin-left: 4vw;
+    color: var(--Lblue);
+    font-size: min(15.0vw,96px);
+
+}
+
+/* Python projects subsection */
 .python {
     position: relative;
 
@@ -296,14 +318,14 @@ animation kinda works */
 
 .title-1{
     
-    margin-left: 2vw;
+    margin-left: 8vw;
     margin-top:8vh;
     text-decoration:underline;
     font-size: min(9.0vw,46px);
 }
 
 .title-2{
-    margin-left: 2vw;
+    margin-left: 8vw;
     margin-top: 2vh;
     font-size: min(5.0vw,32px);
 }
@@ -330,7 +352,8 @@ animation kinda works */
 .about_container{
     position: relative;
     border-radius: 0px;
-    background-color: rgba(238, 207, 109,0.4);
+    background-color: rgba(31, 40, 51,0.6);
+    border: 2px solid var(--Lblue);
     width:min(85vw, 900px);
     margin-left: 2vw;
     margin-right: auto;
@@ -371,12 +394,11 @@ animation kinda works */
     text-decoration: none;
     margin-top: 1vh;
     font-size: min(4.0vw, 26px);
-    border: 2px solid black;
+    border: 2px solid var(--Lblue);
     padding: 2vh;
-    border-radius: 32px;
+    border-radius: 0px;
     display:block;
     color:white;
-    background-color: #88292F;
     margin-left: auto;
     margin-right: 2vw;
     margin-bottom: 2vh;
@@ -388,7 +410,8 @@ animation kinda works */
 .about_container a:hover{
     transition:0.5s;
     color:black;
-    background-color: #97EFE9;
+    background-color: var(--Lblue);
+    border-color: black;
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.2);
 
 }
