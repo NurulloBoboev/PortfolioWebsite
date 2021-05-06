@@ -212,6 +212,7 @@ animation kinda works */
     width:100%;
     /* background-color: var(--contColor); */
     transition:0.2s;
+    overflow: hidden;
 
 }
 
@@ -311,10 +312,12 @@ animation kinda works */
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    justify-content: center;
 }
 
 .slide_show1{
     margin-left: 2vw;
+    margin-right: auto;
     
 }
 
@@ -330,6 +333,7 @@ animation kinda works */
     background-color: rgba(238, 207, 109,0.4);
     width:min(85vw, 900px);
     margin-left: 2vw;
+    margin-right: auto;
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
     transition:0.2s;
 }
