@@ -364,6 +364,8 @@ animation kinda works */
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .slide_show1{
@@ -449,6 +451,7 @@ animation kinda works */
 .contact{
     
     text-align: center;
+    background-color: hsl(228, 20%, 20%);
 }
 
 .contact_form{
@@ -462,6 +465,62 @@ animation kinda works */
 }
 
 
+.textbox textarea{
+    color:black;
+    resize: vertical;
+    width:100%;
+}
+
+input{
+    color:black;
+    width:100%;
+}
+.form_container{
+    display:flex;
+    position: relative;
+    border-radius: 0px;
+    background-color: rgba(31, 40, 51,0.6);
+    border: 2px solid var(--Lblue);
+    width:min(85vw, 900px);
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}
+
+.icons{
+    color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition:0.5s;
+}
+
+
+.icon{
+    font-size: 42px;
+    text-align: center;
+    transition:0.5s;
+    border: 2px solid var(--Lblue);
+    padding-left: 9.5px;
+    padding-right: 9.5px;
+    border-radius: 50%;
+}
+
+.icon:hover{ 
+    box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.2);
+    background: var(--Dblue);
+    transition: 0.5s;
+}
+
+form{
+    justify-content: left;
+    text-align: left;
+}
+
+.msg_title{
+    font-size: min(5.0vw,32px);
+}
 
 
 
