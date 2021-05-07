@@ -295,6 +295,7 @@ animation kinda works */
     margin-top: 100vh;
     height:auto;
     background-color: hsl(228, 20%, 20%);
+    padding-bottom: 7vh;
 }
 
 .profile_pic{
@@ -445,17 +446,17 @@ animation kinda works */
     background-color: var(--Lblue);
     border-color: black;
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.2);
-
 }
 
 .contact{
     
     text-align: center;
     background-color: hsl(228, 20%, 20%);
+
 }
 
 .contact_form{
-    height:50vh;
+    padding-bottom: 10vh;
 }
 
 .contact_form .cont_title{
@@ -486,6 +487,8 @@ input{
     margin-right: auto;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
+    margin-bottom: 5vh;
+    box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
 }
 
 .icons{
@@ -493,23 +496,34 @@ input{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
+    flex-wrap: wrap-reverse;
     transition:0.5s;
+
 }
 
-
 .icon{
-    font-size: 42px;
-    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     transition:0.5s;
     border: 2px solid var(--Lblue);
-    padding-left: 9.5px;
-    padding-right: 9.5px;
     border-radius: 50%;
+    padding:5px;
+}
+
+.icon2{
+    transition:0.5s;
+    width: min(15vw, 64px);
+}
+
+.icon2:hover {
+    filter:invert(100%);
+    transition:0.5s;
 }
 
 .icon:hover{ 
-    box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.2);
-    background: var(--Dblue);
+    box-shadow: 0px 0px 15px 10px rgba(156, 142, 142, 0.2);
+    background: var(--Lblue);
+    border-color: black;
     transition: 0.5s;
 }
 
@@ -522,8 +536,31 @@ form{
     font-size: min(5.0vw,32px);
 }
 
+form button{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1vh;
+    font-size: min(4.0vw, 26px);
+    border: 2px solid var(--Lblue);
+    padding: 2vh;
+    border-radius: 0px;
+    display:block;
+    color:white;
+    margin-bottom: 2vh;
+    transition:0.5s;
+    width:100%;
+    background:none;
+}
 
 
+form button:hover{
+    color: black;
+    box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.2);
+    background: var(--Lblue);
+    transition: 0.5s;
+    border-color: black;
+
+}
 
 
 
