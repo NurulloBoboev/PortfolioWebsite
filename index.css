@@ -295,7 +295,7 @@ animation kinda works */
     margin-top: 100vh;
     height:auto;
     background-color: hsl(228, 20%, 20%);
-    padding-bottom: 7vh;
+    padding-bottom: 15vh;
 }
 
 .profile_pic{
@@ -324,6 +324,7 @@ animation kinda works */
     display:flex;
     flex-direction:column;
     background: var(--Dblue);
+    padding-bottom: 10vh;
 }
 
 .section_title{
@@ -370,15 +371,13 @@ animation kinda works */
 }
 
 .slide_show1{
-    margin-left: auto;
-    margin-right: auto;
     
 }
 
 .slide_show1 img{
     position: relative;
     border-radius: 0px;
-    width:min(85vw, 600px);
+    width:min(85vw, 700px);
     
 }
 
@@ -387,7 +386,7 @@ animation kinda works */
     border-radius: 0px;
     background-color: rgba(31, 40, 51,0.6);
     border: 2px solid var(--Lblue);
-    width:min(85vw, 900px);
+    width:min(85vw, 750px);
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 0px 15px 10px rgba(248, 248, 248, 0.096);
@@ -398,8 +397,8 @@ animation kinda works */
 .about_text{
     font-weight: bold;
     font-size: min(7.0vw,46px);
-    margin-top: 3vh;
-    margin-left: 3vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
 }
 
 /* following 2 control the list styling for list of languages, and list of frameworks/libraries */
@@ -407,18 +406,18 @@ animation kinda works */
 .info_list{
     font-size: max(1.2ch, 14px);
     list-style: circle ;
-    margin-left: 6vw;
+    margin-left: 4vw;
 }
 
 .info_list li{
-    margin-left: 4vw;
+    margin-left: 2vw;
 }
 
 /* Text description of the software */
 .about_info{
-    font-size: max(1.5ch, 16px);
+    font-size: max(1.3ch, 16px);
     margin-top: 2vh;
-    margin-left:5vw;
+    margin-left:2vw;
     margin-right:1vw;
 }
 
@@ -506,9 +505,12 @@ input{
     margin-top: 2vh;
     margin-bottom: 2vh;
     transition:0.5s;
+    display:block;
     border: 2px solid var(--Lblue);
     border-radius: 50%;
     padding:5px;
+
+    aspect-ratio: 1;
 }
 
 .icon2{
