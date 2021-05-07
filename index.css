@@ -379,6 +379,7 @@ animation kinda works */
     position: relative;
     border-radius: 0px;
     width:min(85vw, 600px);
+    
 }
 
 .about_container{
