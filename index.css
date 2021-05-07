@@ -536,13 +536,12 @@ form{
     font-size: min(5.0vw,32px);
 }
 
-.textbox  
 
 form button{
     text-align: center;
     text-decoration: none;
-    margin-top: 1vh;
-    font-size: min(4.0vw, 26px);
+    margin-top: 2vh;
+    font-size: min(4.0vw, 32px);
     border: 2px solid var(--Lblue);
     padding: 2vh;
     border-radius: 0px;
