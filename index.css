@@ -257,8 +257,7 @@ animation kinda works */
 .home p{
     /* border: 2px solid black; */
     font-size: min(6.0vw, 40px);
-    margin-left: 25%;
-    margin-right:25%;
+justify-self: center;
 }
 
 .home a{
@@ -315,6 +314,7 @@ animation kinda works */
     margin-left: 2vw;
     margin-top: 10%;
     margin-bottom: 10%;
+    font-size: max(1.5ch, 16px);
 
 }
 
@@ -554,6 +554,7 @@ form button{
     transition:0.5s;
     width:100%;
     background:none;
+    cursor:pointer;
 }
 
 
